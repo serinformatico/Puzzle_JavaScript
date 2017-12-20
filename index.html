@@ -18,7 +18,7 @@
       <h1>Buscador</h1>
     </div>
     <div class="colFiltros">
-      <form action="buscador.php" method="post" id="formulario">
+      <form id="formulario">
         <div class="filtrosContenido">
           <div class="tituloFiltros">
             <h5>Realiza una búsqueda personalizada</h5>
@@ -37,12 +37,13 @@
               <option value="" disabled selected>Elige un tipo</option>
             </select>
           </div>
+          <!-- ========== FILTRO PRECIO ============ -->
           <div class="filtroPrecio">
             <label for="rangoPrecio">Precio:</label>
             <input type="text" id="rangoPrecio" name="precio" value="" />
           </div>
           <div class="botonField">
-            <input type="submit" class="btn white" value="Buscar" id="submitButton">
+            <input type="button" class="btn white" value="Buscar" id="submitButton">
           </div>
         </div>
       </form>
