@@ -56,24 +56,14 @@ video#vidFondo {
 .tituloFiltros h5{
     font-size: 1.3rem;
 }
-.filtroCiudad{
-  height: 100px;
+.filtroItem{
+  height: 150px;
   width: 90%;
   margin-left: 5%;
+}
+.filtroItem label{
   text-align: left;
-}
-.filtroCiudad .select-wrapper{
-  margin: 25px auto;
-  width: 90%;
-}
-.filtroTipo{
-  width: 100%;
-  height: 100px;
-  text-align: center;
-}
-.filtroTipo .select-wrapper{
-  margin: 5px auto;
-  width: 90%;
+  font-size: 14px;
 }
 .filtroPrecio{
   margin: 15px auto;
@@ -97,6 +87,15 @@ video#vidFondo {
   flex-flow: row wrap;
   align-content: space-between;
   padding: 20px;
+}
+.itemContenido{
+  width: 100%;
+  min-height: 170px;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5px;
 }
 .tituloContenido{
   width: 100%;

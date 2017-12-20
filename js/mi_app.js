@@ -46,7 +46,7 @@
           if(elemento.Ciudad == filtroCiudad && elemento.Tipo == filtroTipo){
             if(precioFloat>=filtroPrecioMin && precioFloat<=filtroPrecioMax){
               var resultado = '';
-              resultado += '<div id="elemento'+elemento.Id+'" class="tituloContenido card">';
+              resultado += '<div id="elemento'+elemento.Id+'" class="itemContenido card">';
               resultado +=  '<div class="col s4">';
               resultado +=    '<img src="img/home.jpg" class="col s12">';
               resultado +=  '</div>';
@@ -73,7 +73,7 @@
     $.ajax({url: "data-1.json", success: function(datos){
       $.each(datos, function(indice, elemento){
           var resultado = '';
-          resultado += '<div id="elemento'+elemento.Id+'" class="tituloContenido card">';
+          resultado += '<div id="elemento'+elemento.Id+'" class="itemContenido card">';
           resultado +=  '<div class="col s4">';
           resultado +=    '<img src="img/home.jpg" class="col s12">';
           resultado +=  '</div>';
