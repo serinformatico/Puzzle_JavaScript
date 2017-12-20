@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/customColors.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario</title>
 </head>
 
@@ -21,16 +23,18 @@
           <div class="tituloFiltros">
             <h5>Realiza una búsqueda personalizada</h5>
           </div>
-          <div class="filtroCiudad input-field">
-            <label for="selectCiudad">Ciudad:</label>
-            <select name="ciudad" id="selectCiudad">
-              <option value="" selected>Elige una ciudad</option>
+          <!-- ========== FILTRO CIUDADES ========== -->
+          <div class="filtroCiudad">
+            <label>Ciudad:</label>
+            <select name="ciudad" id="selectCiudad" class="browser-default">
+              <option value="" disabled selected>Elige una ciudad</option>
             </select>
           </div>
-          <div class="filtroTipo input-field">
-            <label for="selecTipo">Tipo:</label><br>
-            <select name="tipo" id="selectTipo">
-              <option value="" selected>Elige un tipo</option>
+          <!-- =========== FILTRO TIPOS ============ -->
+          <div class="filtroCiudad">
+            <label>Tipo:</label>
+            <select name="tipo" id="selectTipo" class="browser-default">
+              <option value="" disabled selected>Elige un tipo</option>
             </select>
           </div>
           <div class="filtroPrecio">
@@ -55,15 +59,8 @@
     </div>
   </div>
 
-
-
-<!-- 
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
-
-<button>Get External Content</button> -->
-
-
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/mi_app.js"></script>
 

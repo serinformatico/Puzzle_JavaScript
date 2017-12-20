@@ -57,9 +57,10 @@ video#vidFondo {
     font-size: 1.3rem;
 }
 .filtroCiudad{
-  width: 100%;
   height: 100px;
-  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  text-align: left;
 }
 .filtroCiudad .select-wrapper{
   margin: 25px auto;
@@ -123,15 +124,6 @@ video#vidFondo {
 }
 .divider{
   width: 100%;
-}
-.itemMostrado{
-  width: 100%;
-  margin-top: 0.4rem;
-  display: flex;
-  flex-flow: row wrap;
-}
-.itemMostrado img{
-  width: 35% !important;
 }
 .precioTexto{
   font-size: 1.3rem;
