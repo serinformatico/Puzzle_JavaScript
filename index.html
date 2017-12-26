@@ -2,68 +2,65 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="css/customColors.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
-  <title>Formulario</title>
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>Juego</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+
 </head>
-
 <body>
+  <div class="main-container">
+    <h1 class="main-titulo">Match Game</h1>
 
-  <div class="contenedor">
-    <div class="card rowTitulo">
-      <h1>Buscador</h1>
-    </div>
-    <div class="colFiltros">
-      <form id="formulario">
-        <div class="filtrosContenido">
-          <div class="tituloFiltros">
-            <h5>Realiza una búsqueda personalizada</h5>
-          </div>
-          <!-- ========== FILTRO CIUDADES ========== -->
-          <div class="filtroItem">
-            <label>Ciudad:</label>
-            <select name="ciudad" id="selectCiudad" class="browser-default">
-              <option value="" disabled selected>Elige una ciudad</option>
-            </select>
-          </div>
-          <!-- =========== FILTRO TIPOS ============ -->
-          <div class="filtroItem">
-            <label>Tipo:</label>
-            <select name="tipo" id="selectTipo" class="browser-default">
-              <option value="" disabled selected>Elige un tipo</option>
-            </select>
-          </div>
-          <!-- ========== FILTRO PRECIO ============ -->
-          <div class="filtroPrecio">
-            <label for="rangoPrecio">Precio:</label>
-            <input type="text" id="rangoPrecio" name="precio" value="" />
-          </div>
-          <div class="botonField">
-            <input type="button" class="btn white" value="Buscar" id="submitButton">
-          </div>
-        </div>
-      </form>
-    </div>
+    <div class="panel-tablero">
+      <div class="col-1">
 
-    <div class="colContenido">
-      <div class="tituloContenido card">
-        <h5>Resultados de la búsqueda:</h5>
-        <button type="button" name="todos" class="btn-flat waves-effect" id="btnMostrarTodos">Mostrar Todos</button>
       </div>
-      <!-- ========== ELEMENTOS ENCONTRADOS ========== -->
-      <div id="elementosEncontrados" class="row">
+      <div class="col-2">
+
+      </div>
+      <div class="col-3">
+
+      </div>
+      <div class="col-4">
+
+      </div>
+      <div class="col-5">
+
+      </div>
+      <div class="col-6">
+
+      </div>
+      <div class="col-7">
+
       </div>
     </div>
+
+    <div class="panel-score">
+      <div class="score">
+        <h2 class="data-titulo">Puntuación</h2>
+        <span class="data-info" id="score-text">0</span>
+      </div>
+      <div class="moves">
+        <h2 class="data-titulo">Movimientos</h2>
+        <span class="data-info" id="movimientos-text">0</span>
+      </div>
+      <div class="time">
+        <h2 class="data-titulo">Tiempo</h2>
+        <div class="data-info" id="timer">02:00</div>
+      </div>
+      <div class="buttons">
+        <button class="btn-reinicio">Iniciar</button>
+      </div>
+    </div>
+
   </div>
 
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/mi_app.js"></script>
+
+  	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+ 	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
